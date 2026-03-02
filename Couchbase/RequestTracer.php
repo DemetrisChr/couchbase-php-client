@@ -20,8 +20,12 @@ declare(strict_types=1);
 
 namespace Couchbase;
 
+use Couchbase\Exception\TracerException;
+
 /**
  * Represents a tracer capable of creating trace spans.
+ *
+ * @throws TracerException
  */
 interface RequestTracer
 {
